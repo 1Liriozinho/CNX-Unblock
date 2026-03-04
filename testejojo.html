@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: #1a1a1a; }
+        #game { width: 100%; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+    <script>
+        EJS_player = "#game";
+        EJS_core = "fba"; 
+        EJS_gameName = "JoJo HFTF";
+        EJS_color = "#990000";
+        EJS_startOnLoaded = true;
+        // Usando a versão de dados estável
+        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/";
+        
+        // Vamos testar SEM a BIOS primeiro, pois o FBA as vezes conflita se a BIOS for de MAME
+        EJS_gameUrl = "https://1liriozinho.github.io/CNX-Unblock/jojobanr1.zip";
+        
+        // Forçar o emulador a ignorar erros de carregamento de BIOS
+        EJS_DEBUG_XXG = true; 
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/loader.js"></script>
+</body>
+</html>
