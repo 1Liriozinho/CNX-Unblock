@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoJo HFTF - Arcade</title>
     <style>
-        /* Remove bordas e faz o emulador ocupar a tela toda */
+        /* Estilo para ocupar a tela toda e remover bordas */
         body, html {
             margin: 0;
             padding: 0;
@@ -30,19 +30,25 @@
     </div>
 
     <script>
-        // Configurações do EmulatorJS
+        // Configurações do EmulatorJS corrigidas
         window.EJS_player = "#game";
-        window.EJS_core = "fbneo"; // Core recomendado para JoJo (CPS3)
-        window.EJS_gameName = "JoJo's Bizarre Adventure: HFTF";
+        window.EJS_core = "fbneo"; 
+        window.EJS_gameName = "JoJo's Bizarre Adventure (Euro 990913)";
         window.EJS_color = "#990000";
-        window.EJS_startOnLoaded = false;
+        window.EJS_startOnLoaded = true;
         
-        // Caminho dos dados do sistema (oficial do projeto)
+        // Caminho dos dados do sistema oficial
         window.EJS_pathtodata = "https://emulatorjs.github.io/EmulatorJS/data/";
         
-        // Seus links do GitHub Pages (ajustados para HTTPS)
-        window.EJS_gameUrl = "https://1liriozinho.github.io/CNX-Unblock/jojobanr1.zip";
-        window.EJS_biosUrl = "https://1liriozinho.github.io/CNX-Unblock/ar_bios.zip";
+        // Links diretos do seu repositório (com os nomes corrigidos)
+        window.EJS_gameUrl = "https://1liriozinho.github.io/CNX-Unblock/jojoba.zip";
+        window.EJS_biosUrl = "https://1liriozinho.github.io/CNX-Unblock/cps3.zip";
+
+        // Comandos extras para aumentar a compatibilidade com ROMs customizadas
+        window.EJS_Settings = {
+            "fbneo-allow-invalid-romsets": "enabled",
+            "fbneo-diagnostic-input": "Hold Start"
+        };
     </script>
 
     <script src="https://emulatorjs.github.io/EmulatorJS/data/loader.js"></script>
