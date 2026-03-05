@@ -9,25 +9,19 @@
 
     <script>
         window.EJS_player = "#game";
-        window.EJS_core = "mame2003"; // Forçando o motor 2003
-        window.EJS_gameName = "JoJo's Bizarre Adventure (Japan)";
+        window.EJS_core = "n64"; 
+        window.EJS_gameName = "Paper Mario (Mario Story)";
         window.EJS_color = "#990000";
         window.EJS_startOnLoaded = true;
         
         window.EJS_pathtodata = "https://emulatorjs.github.io/EmulatorJS/data/";
 
-        // Links do GitHub - Verifique se os nomes batem EXATAMENTE
-        window.EJS_gameUrl = "https://1liriozinho.github.io/CNX-Unblock/jojoj.zip"; 
+        
+        window.EJS_gameUrl = "https://files.catbox.moe/zbcoxt.zip"; 
        
-        // CONFIGURAÇÃO PARA PULAR O MENU DO MAME 2003
-        // Esses argumentos forçam o emulador a ignorar avisos de tela e configurações de vídeo
+       
         window.EJS_MAME_args = "-skip_gameinfo -nowarning -rompath / -window";
         
-        // Comando para aceitar qualquer comando de controle do MAME
-        window.EJS_Settings = {
-            "mame2003-skip-disclaimer": "enabled",
-            "mame2003-dcs-speedhack": "enabled"
-        };
     </script>
 
     <script src="https://emulatorjs.github.io/EmulatorJS/data/loader.js"></script>
