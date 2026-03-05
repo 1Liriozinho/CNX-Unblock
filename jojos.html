@@ -1,16 +1,14 @@
-<div style='width:640px;height:480px;max-width:100%'>
-    <div id='game'></div>
+<div style="width:100%;height:600px;">
+    <div id="game"></div>
 </div>
 
-<script type='text/javascript'>
-    EJS_player = '#game';
-    
-    EJS_core = 'mame2003';
-    
-    // URL to Game rom
-    EJS_gameUrl = 'https://1liriozinho.github.io/CNX-Unblock/jojoj.zip';
-    
-    // Path to the data directory
-    EJS_pathtodata = 'data/';
+<script>
+    EJS_player = "#game";
+    EJS_core = "n64"; // Certifique-se que o core combina com a extensão da ROM
+    EJS_gameName = "Jogo";
+    EJS_color = "#0064ff";
+    EJS_startOnLoaded = false; // Mude para false para ver se o erro ocorre antes ou depois do 'Start'
+    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+    EJS_gameUrl = "https://files.catbox.moe/zbcoxt.zip"; // Use um link que termine em .gba, .nes, .zip, etc.
 </script>
-<script src='data/loader.js'></script>
+<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
